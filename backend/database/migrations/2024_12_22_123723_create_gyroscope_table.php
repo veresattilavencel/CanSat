@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('gyroscope', function (Blueprint $table) {
             $table->id();
-            $table->dateTime("Time", 7);
+            $table->dateTime("Time", 6);
             $table->float("x_rotation")->nullable();
             $table->float("y_rotation")->nullable();
             $table->float("z_rotation")->nullable();

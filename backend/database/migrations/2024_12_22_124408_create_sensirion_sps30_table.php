@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sensirion_sps30', function (Blueprint $table) {
             $table->id();
-            $table->dateTime("Time", 7);
+            $table->dateTime("Time", 6);
             $table->float("pm1_concentration")->nullable();
             $table->float("pm2_5_concentration")->nullable();
             $table->float("pm10_concentration")->nullable();

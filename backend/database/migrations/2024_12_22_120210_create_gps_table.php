@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('gps', function (Blueprint $table) {
             $table->id();
-            $table->dateTime("Time", 7);
+            $table->dateTime("Time", 6);
             $table->float("Latitude")->nullable();
             $table->float("Longitude")->nullable();
             $table->float("HeightAboveSeaLevel")->nullable();

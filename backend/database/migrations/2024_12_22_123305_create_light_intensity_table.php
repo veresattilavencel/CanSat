@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('light_intensity', function (Blueprint $table) {
             $table->id();
-            $table->dateTime("Time", 7);
+            $table->dateTime("Time", 6);
             $table->float("Lux")->nullable();
             $table->timestamps();
         });
