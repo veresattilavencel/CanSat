@@ -15,7 +15,7 @@ class BarometicSensorSeeder extends Seeder
     {
         DB::table("barometic_sensor")->insert([
             [
-                'Time' => "2024-02-14",
+                'Time' => "2024-02-14 14:51:27.66666",
                 'Pressure' => 40000.22,
                 'Temperature' => 223,
                 'Altitude' => 111.456

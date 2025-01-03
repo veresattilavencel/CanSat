@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('barometic_sensor', function (Blueprint $table) {
             $table->id();
-            $table->date("Time");
+            $table->dateTime("Time", 7);
             $table->float("Pressure")->nullable();
             $table->float("Temperature")->nullable();
             $table->float("Altitude")->nullable();
