@@ -15,6 +15,7 @@ class SensirionSps30Resource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             "Time" => $this->Time,
             "pm1_concentration" => $this->pm1_concentration,
             "pm2_5_concentration" => $this->pm2_5_concentration,

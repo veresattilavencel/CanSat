@@ -15,6 +15,7 @@ class GyroscopeResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'Time' => $this->Time,
             'x_rotation' => $this->x_rotation,
             'y_rotation' => $this->y_rotation,

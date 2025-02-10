@@ -15,6 +15,7 @@ class BarometicSensorResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'Time' => $this->Time,
             'Pressure' => $this->Pressure,
             'Temperature' => $this->Temperature,

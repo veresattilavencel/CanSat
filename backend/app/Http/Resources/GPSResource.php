@@ -15,6 +15,7 @@ class GPSResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'Time' => $this->Time,
             'Latitude' => $this->Latitude,
             'Longitude' => $this->Longitude,

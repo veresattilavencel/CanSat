@@ -15,6 +15,7 @@ class LightIntensityResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'Time' => $this->Time,
             'Lux' => $this->Lux
         ];
