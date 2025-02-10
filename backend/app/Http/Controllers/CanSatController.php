@@ -22,24 +22,20 @@ use App\Http\Requests\StoreSensirionSps30Request;
 
 class CanSatController extends Controller
 {
-    public function index(Request $request){
-        $data = GPS::all();
-        $order = $request->input("order");
-        $maxHeight = $request->input("maxHeight");
-        $minHeight = $request->input("minHeight");
-        if($order == "desc"){
-            $data = $data->sortByDesc("Time");
-        }
-        else if ($order == "asc"){
-            $data = $data->sortBy("Time");
-        }
-        if ($minHeight != null){
-            $data = $data->where("HeightAboveSeaLevel", ">=", $minHeight);
-        }
-        if ($maxHeight != null && $maxHeight >= $minHeight){
-            $data = $data->where("HeightAboveSeaLevel", "<=", $maxHeight);
-        }
-        return GPSResource::collection($data);
+    public function index(){
+        return new GPSResource(GPS::orderBy("Time", "desc")->first());
+    }
+    public function barometicsensor(){
+        return new BarometicSensorResource(BarometicSensor::orderBy("Time", "desc")->first());
+    }
+    public function gyroscope(){
+        return new GyroscopeResource(Gyroscope::orderBy("Time", "desc")->first());
+    }
+    public function lightintensity(){
+        return new LightIntensityResource(LightIntensity::orderBy("Time", "desc")->first());
+    }
+    public function sensirionsps30(){
+        return new SensirionSps30Resource(SensirionSps30::orderBy("Time", "desc")->first());
     }
     public function storeGPS(StoreGPSRequest $request){
         return new GPSResource(GPS::create($request->validated()));
