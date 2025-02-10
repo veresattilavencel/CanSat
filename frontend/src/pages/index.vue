@@ -1,26 +1,47 @@
 <template>
-  <BaseLayout>
-    <h1 class="text-6xl my-10 dark:text-white">Hello!</h1>
-    <button class="bg-blue-500 text-white rounded py-2 px-4" @click="increment()">
-      Számláló: {{ counter }}
-    </button>
-  </BaseLayout>
+  <div class="grid grid-cols-2 gap-4 p-4 container mx-auto">
+    <ShowObject :object="gps"/>
+    <ShowObject :object="barometicsensor"/>
+    <ShowObject :object="gyroscope"/>
+    <ShowObject :object="lightintensity"/>
+    <ShowObject :object="sensirionsps30"/>
+  </div>
 </template>
 
 <script>
-import BaseLayout from '@layouts/BaseLayout.vue'
-import { useCounter } from '@stores/CounterStore.mjs'
-import { mapState, mapActions } from 'pinia'
-
+import {http} from '@utils/http.mjs'
+import ShowObject from '@components/ShowObject.vue';
 export default {
-  components: {
-    BaseLayout
-  },
-  computed: {
-    ...mapState(useCounter, ['counter'])
-  },
   methods: {
-    ...mapActions(useCounter, ['increment'])
+    async getDatas(){
+      this.gps= (await http.get("gps")).data.data
+      this.barometicsensor= (await http.get("barometicsensor")).data.data
+      this.gyroscope= (await http.get("gyroscope")).data.data
+      this.lightintensity= (await http.get("lightintensity")).data.data
+      this.sensirionsps30= (await http.get("sensirionsps30")).data.data
+    }
+  },
+  data(){
+    return {
+      gps: {},
+      barometicsensor: {},
+      gyroscope: {},
+      lightintensity: {},
+      sensirionsps30: {},
+      interval: null
+    }
+  },
+  async beforeMount(){
+    this.getDatas()
+  },
+  async mounted(){
+    this.interval = setInterval(this.getDatas, 500)
+  },
+  beforeUnmount(){
+    clearInterval(this.interval);
+  },
+  components:{
+    ShowObject
   }
 }
 </script>
