@@ -16,34 +16,22 @@ namespace ClassLibrary
         {
             _httpClient = new HttpClient() { BaseAddress = new Uri(url) };
         }
-        public int AddNewBS(BarometicSensor bs)
+        public int AddNewMissionLive(MissionLive missionLive)
         {
-            var content = new StringContent(JsonSerializer.Serialize(bs), Encoding.UTF8, "application/json");
-            _httpClient.PostAsync("api/barometicsensor", content).Wait();
+            var content = new StringContent(JsonSerializer.Serialize(missionLive), Encoding.UTF8, "application/json");
+            _httpClient.PostAsync("api/missionlives", content).Wait();
             return 0;
         }
-        public int AddNewGPS(GPS gps)
+        public int AddNewPowerSaving(PowerSaving powerSaving)
         {
-            var content = new StringContent(JsonSerializer.Serialize(gps), Encoding.UTF8, "application/json");
-            _httpClient.PostAsync("api/gps", content).Wait();
+            var content = new StringContent(JsonSerializer.Serialize(powerSaving), Encoding.UTF8, "application/json");
+            _httpClient.PostAsync("api/powersavings", content).Wait();
             return 0;
         }
-        public int AddNewGyroscope(Gyroscope gyroscope)
+        public int AddNewPreFlight(PreFlight preFlight)
         {
-            var content = new StringContent(JsonSerializer.Serialize(gyroscope), Encoding.UTF8, "application/json");
-            _httpClient.PostAsync("api/gyroscope", content).Wait();
-            return 0;
-        }
-        public int AddNewLI(LightIntensity li)
-        {
-            var content = new StringContent(JsonSerializer.Serialize(li), Encoding.UTF8, "application/json");
-            _httpClient.PostAsync("api/lightintensity", content).Wait();
-            return 0;
-        }
-        public int AddNewSS(SensirionSps30 ss)
-        {
-            var content = new StringContent(JsonSerializer.Serialize(ss), Encoding.UTF8, "application/json");
-            _httpClient.PostAsync("api/sensirionsps30", content).Wait();
+            var content = new StringContent(JsonSerializer.Serialize(preFlight), Encoding.UTF8, "application/json");
+            _httpClient.PostAsync("api/preflights", content).Wait();
             return 0;
         }
     }
