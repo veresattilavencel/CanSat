@@ -14,7 +14,7 @@ class MissionLiveController extends Controller
     }
     public function store(StoreMissionLiveRequest $request)
     {
-        return new MissionLiveResource($request->validated());
+        return new MissionLiveResource(MissionLive::create($request->validated()));
     }
     public function show(MissionLive $missionLive)
     {

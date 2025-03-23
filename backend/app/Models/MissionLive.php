@@ -36,4 +36,5 @@ class MissionLive extends Model
         ,"networkData1"
         ,"networkData2"
     ];
+    public $timestamps = false;
 }
