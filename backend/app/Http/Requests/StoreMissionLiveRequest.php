@@ -34,7 +34,6 @@ class StoreMissionLiveRequest extends FormRequest
             "nc2_5" =>["nullable", "numeric"],
             "nc4_0" =>["nullable", "numeric"],
             "nc10_0" =>["nullable", "numeric"],
-            "nc10_0" =>["nullable", "numeric"],
             "typycalParticleSize" =>["nullable", "numeric"],
             "accelX" =>["nullable", "numeric"],
             "accelY" =>["nullable", "numeric"],

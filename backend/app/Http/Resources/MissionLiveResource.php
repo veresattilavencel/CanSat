@@ -27,7 +27,6 @@ class MissionLiveResource extends JsonResource
             "nc2_5" => $this->nc2_5,
             "nc4_0" => $this->nc4_0,
             "nc10_0" => $this->nc10_0,
-            "nc10_0" => $this->nc10_0,
             "typycalParticleSize" => $this->typycalParticleSize,
             "accelX" => $this->accelX,
             "accelY" => $this->accelY,
