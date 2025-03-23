@@ -28,6 +28,7 @@ class StorePreFlightRequest extends FormRequest
             "accelZ" =>["nullable", "numeric"],
             "temperature" =>["nullable", "numeric"],
             "pressure" =>["nullable", "numeric"],
+            "altitude" => ["nullable", "numeric"],
             "networkData1" =>["nullable", "numeric"],
             "networkData2" =>["nullable", "numeric"]
         ];

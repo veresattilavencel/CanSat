@@ -39,6 +39,7 @@ class MissionLiveResource extends JsonResource
             "bottomTEMTValue" => $this->bottomTEMTValue,
             "temperature" => $this->temperature,
             "pressure" => $this->pressure,
+            "altitude" => $this->altitude,
             "networkData1" => $this->networkData1,
             "networkData2" => $this->networkData2,
             ];

@@ -21,6 +21,7 @@ class PreFlightResource extends JsonResource
             "accelZ" => $this->accelZ,
             "temperature" => $this->temperature,
             "pressure" => $this->pressure,
+            "altitude" => $this->altitude,
             "networkData1" => $this->networkData1,
             "networkData2" => $this->networkData2
         ];

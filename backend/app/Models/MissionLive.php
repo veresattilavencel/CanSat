@@ -33,6 +33,7 @@ class MissionLive extends Model
         ,"bottomTEMTValue"
         ,"temperature"
         ,"pressure"
+        ,"altitude"
         ,"networkData1"
         ,"networkData2"
     ];

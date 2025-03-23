@@ -15,6 +15,7 @@ class PreFlight extends Model
     "accelZ",
     "temperature",
     "pressure",
+    "altitude",
     "networkData1",
     "networkData2"
     ];

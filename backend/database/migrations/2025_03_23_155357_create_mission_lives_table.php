@@ -36,6 +36,7 @@ return new class extends Migration
             $table->float("bottomTEMTValue")->nullable();
             $table->float("temperature")->nullable();
             $table->float("pressure")->nullable();
+            $table->float("altitude")->nullable();
             $table->float("networkData1")->nullable();
             $table->float("networkData2")->nullable();
         });
