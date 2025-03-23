@@ -25,7 +25,6 @@ return new class extends Migration
             $table->float("nc2_5")->nullable();
             $table->float("nc4_0")->nullable();
             $table->float("nc10_0")->nullable();
-            $table->float("nc10_0")->nullable();
             $table->float("typycalParticleSize")->nullable();
             $table->float("accelX")->nullable();
             $table->float("accelY")->nullable();

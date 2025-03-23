@@ -18,6 +18,6 @@ class PreFlightController extends Controller
     }
     public function show(PreFlight $preFlight)
     {
-        new PreFlightResource($preFlight);
+        return new PreFlightResource($preFlight);
     }
 }
