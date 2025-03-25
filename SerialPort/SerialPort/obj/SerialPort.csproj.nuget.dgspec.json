@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj": {}
+    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj": {
+    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj",
         "projectName": "ClassLibrary",
-        "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj",
+        "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj",
         "packagesPath": "C:\\Users\\atis2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\obj\\",
+        "outputPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj": {
+    "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj",
+        "projectUniqueName": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj",
         "projectName": "SerialPort",
-        "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj",
+        "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\SerialPort\\SerialPort.csproj",
         "packagesPath": "C:\\Users\\atis2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\SerialPort\\obj\\",
+        "outputPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\SerialPort\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\mappák\\cansat\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj"
+              "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\atis2\\OneDrive\\Asztali gép\\Új mappa\\CanSat\\SerialPort\\ClassLibrary\\ClassLibrary.csproj"
               }
             }
           }

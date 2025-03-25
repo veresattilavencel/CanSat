@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialPort")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbf01807aa83c00da56303e7463229461439bd7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ee74616a71b2139d4bec6afcf05dcbb6e01a87")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialPort")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialPort")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
