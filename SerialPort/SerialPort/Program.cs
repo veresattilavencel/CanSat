@@ -16,7 +16,7 @@ static double? isValidData(byte? crc8, double? data)
 SerialPort SP = new()
 {
     PortName = "com3",
-    BaudRate = 9600,
+    BaudRate = 115200,
     ReadTimeout = 600
 };
 SP.Open();
