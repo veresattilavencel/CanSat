@@ -25,6 +25,7 @@ while (true)
     try
     {
         string?[] data = SP.ReadLine().Split(",");
+        data.ToList().RemoveAt(0);
         try
         {
             if (data[0] == "1")
