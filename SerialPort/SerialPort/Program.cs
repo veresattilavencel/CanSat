@@ -15,18 +15,20 @@ static double? isValidData(byte? crc8, double? data)
 }
 SerialPort SP = new()
 {
-    PortName = "com3",
+    PortName = "COM3",
     BaudRate = 115200,
     ReadTimeout = 600
 };
 SP.Open();
+
 while (true)
 {
     try
     {
-        string?[] data = SP.ReadLine().Split(",");
-        data.ToList().RemoveAt(0);
-        try
+        await ReadSerialAsync(SP);
+        //string?[] data = SP.ReadLine().Split(",");
+        //data.ToList().RemoveAt(0);
+        /*try
         {
             if (data[0] == "1")
             {
@@ -50,11 +52,25 @@ while (true)
             StreamWriter w = new("data.csv", true, Encoding.UTF8);
             w.WriteLine(string.Join(';', data));
             w.Close();
-        }
+        }*/
     }
-    catch
+    catch (Exception ex)
     {
-        Console.WriteLine("Nincs adat");
+        Console.WriteLine($"Nincs adat: {ex.Message}");
     }
     
+}
+static async Task ReadSerialAsync(SerialPort sp)
+{
+    while (sp.IsOpen)
+    {
+        try
+        {
+            string data = await Task.Run(() => sp.ReadLine());
+            Console.WriteLine(data);
+        }
+        catch (TimeoutException)
+        {
+        }
+    }
 }
